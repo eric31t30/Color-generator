@@ -1,0 +1,139 @@
+.colors-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: 120px 0px;
+}
+
+.single-card {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform .5s ease;
+    margin: 2px;
+}
+
+.single-card .content{
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+}
+
+.single-card p {
+    margin: 0;
+    color: #0d0d0d;
+    font-weight: 400;
+}
+
+.single-card:hover {
+    transform: scale(1.05 );
+}
+
+.single-card:hover .content {
+    background: rgba(214, 214, 220, 0.367);
+    display: flex;
+    align-items: center;
+}
+
+.single-card button {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 9px;
+    width: 42px;
+    padding: 5px 6px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.single-card button img {
+    width: 100%;
+}
+
+.copy-alert {
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+
+@media (max-width: 719px){
+
+    .colors-container{
+        margin: 80px 0px;
+    }
+
+    .single-card{
+        width: 90px;
+        height: 90px;
+    }
+
+    .single-card .content{
+        flex-direction: column;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    
+
+    .single-card p{
+        font-size: 10px;
+        margin-top: 4px;
+    }
+
+    .single-card button {
+        padding: 1px 4px;
+        margin-top: 4px;
+        transform: scale(.5);
+    }
+
+    .copy-alert {
+        font-size: 7px;
+        bottom: 0px;
+        padding: 0px 3px;
+        
+    }
+}
+
+
+@media (min-width: 720px) and (max-width: 1299px){
+    
+    .colors-container{
+        gap: 60px 20px;
+        margin: 180px 0px;
+    }
+    
+}
+
+@media (min-width: 1920px){
+
+    .colors-container{
+        margin: 160px 0px;
+    }
+
+    .single-card{
+        width: 160px;
+        height: 160px;
+    }
+
+    .single-card .content{
+        padding: 10px;
+    }
+    
+    .single-card p{
+        font-size: 15px;
+    }
+    
+    .colors-container{
+        gap: 80px 40px;
+    }
+}

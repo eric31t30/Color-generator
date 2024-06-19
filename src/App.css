@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 1);
+    opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(254, 181, 164);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(82, 82, 82);
+}
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(41deg, rgba(129,92,153,1) 0%, rgba(231,84,139,1) 49%, rgba(252,176,69,1) 100%);
+    height: 100%;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    
+}
+
+.header h1{
+    font-size: 3.5em;
+    width: 400px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    user-select: none;
+}
+
+.deco-header{
+    position: absolute;
+    filter: invert(100);
+    transition: all 2s ease;
+}
+
+.deco-header:hover{
+    transform: translateY(-10px);
+}
+
+.big-moon{
+    right: 20px;
+    bottom: -15px;
+}
+
+.small-moon{
+    left: 40%;
+    top: 5px;
+}
+
+.big-star{
+    right: 30%;
+    top: 50px;
+}
+
+.small-star{
+    left: 30%;
+    bottom: 40px;
+}
+
+
+.footer{
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.author:hover{
+    border-bottom: 1px solid white;
+}
+
+.github-icon{
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 719px){
+
+    body{
+        width: 100%;
+    }
+    
+    .header h1{
+        font-size: 2.5em;
+        margin-left: 15px;
+    }
+
+    .deco-header{
+        opacity: .5;
+    }
+
+    .big-moon{
+        right: 20px;
+        bottom: -10px;
+    }
+    
+    .small-moon{
+        left: 10%;
+        top: 5px;
+    }
+    
+    .big-star{
+        right: 65%;
+        top: 100px;
+    }
+    
+    .small-star{
+        left: 80%;
+        bottom: 140px;
+    }
+}
+
+
+@media (min-width: 720px) and (max-width: 1299px){
+    
+    .header{
+        margin-bottom: 60px;
+        margin-top: 40px;
+        height: 200px;
+    }
+
+    .header h1{
+        font-size: 4em;
+    }
+
+    .deco-header{
+        opacity: .5;
+    }
+
+    .big-moon{
+        right: 20px;
+        bottom: -15px;
+    }
+    
+    .small-moon{
+        left: 40%;
+        top: 5px;
+    }
+    
+    .big-star{
+        right: 30%;
+        top: 50px;
+    }
+    
+    .small-star{
+        left: 20%;
+        bottom: 0px;
+    }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1919px){
+
+    .header{
+        margin-bottom: 60px;
+        margin-top: 40px;
+        height: 200px;
+    }
+    
+    .header h1{
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1920px){
+
+    .header{
+        margin: 160px 0px;
+        height: 200px;
+    }
+    
+    .header h1{
+        width: 700px;
+        font-size: 6em;
+        margin-left: 60px;
+    }
+
+    .big-moon{
+        right: 40px;
+        bottom: -15px;
+    }
+    
+
+    .footer{
+        height: 80px;
+    }
+
+    .author{
+        font-size: 30px;
+    }
+
+    .github-icon{
+        transform: scale(1.5);
+    }
+}
+
+
